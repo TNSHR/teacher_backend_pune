@@ -10,7 +10,7 @@ const app = express();
 // ✅ Allow only your Netlify frontend domain
 app.use(
   cors({
-    origin: ["https://mentorfeedback.netlify.app/","http://localhost:3000" ],
+    origin: ["https://mentorfeedback.netlify.app","http://localhost:3000" ],
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     allowedHeaders: ["Content-Type", "Authorization"],
     credentials: true,
